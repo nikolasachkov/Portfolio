@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://kit.fontawesome.com/6b2fa64c4b.js" crossorigin="anonymous"></script>
+    <title>Nikola Sachkov</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <!-- TO DO - sticky nav -> smooth scroll -->
+                <li><a href="#me">Nikola Sachkov</a></li>
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact-me">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about-me">
+            <h1>Nikola Sachkov</h1>
+            <p>
+                I am a Computer Science student with an interest in Web Development, Project Management, and overall getting an understanding of all aspects of an IT project. I am outgoing, keen on learning new skills, and love a challenge, so I actively participate in all kinds of initiatives/hackathons/competitions organised in and out of school.
+            </p>
+            <img src="../images/nikola.JPG" alt="A photo of Nikola" width="200px">
+        </section>
+
+        <section id="projects">
+            <h1>Projects</h1>
+                <!-- Project 1 -->
+                <article>
+                    <h3><a href="https://github.com/false-positive/beware" target="_blank">Beware</a></h3>
+                    <p>
+                        Beware is a web platform, which puts its users in the shoes of a hacker, who managed to get inside someone's computer. Their goal is to complete a series of tasks and collect data from the unlocked device.
+                    </p>
+                    <p>
+                        Thinking from the perspective of an attacker teaches users about ways their personal information can get stolen and how to protect it, by following security best practices.
+                    </p>
+                    <img src="#" alt="... a page in Beware">
+                </article>
+                <!-- Project 2 -->
+                <article>
+                    <h3><a href="https://github.com/false-positive/ecospace" target="_blank">ECOSpace</a></h3>
+                    <p>
+                        ECOspace is a social network designed to facilitate the organization of groups of volunteers who want to help protect their local natural sites and reduce global pollution. This is done by creating events that any user can participate in.
+                    </p>
+                    <img src="#" alt="... page in ECOSpace">
+                </article>
+                <!-- Project 3 -->
+                <article>
+                    <h3><a href="https://github.com/nikolasachkov/Budget-Tracker" target="_blank">Budget Tracker</a></h3>
+                    <p>
+                        The Budget Tracker API provides a simple and intuitive way to manage personal finances through a RESTful interface. Built with Flask, it supporst a range of operations essential for personal budgeting.
+                    </p>
+                    <img src="#" alt="... page in Budget Tracker">
+                </article>
+                <article>
+                    <p>
+                        Here you can find all the projects I have worked on in collaboration with my hackaton teammates.
+                    </p>
+                    <a href="https://false-positive.dev/" target="_blank">False Positive</a>
+                    <img src="" alt="False Positive logo"> <!-- put it next to the link -->
+                </article>
+        </section>
+
+        <section class="contact-me">
+            <h1>Contact me</h1>
+            <p>Contacts:</p>
+            <ul>
+                <li><a href="mailto:nikola.sachkov@gmail.com" target="_blank" rel="nofollow"><i class="fa fa-envelope"></i>Email</a></li>
+                <li><a href="https://linkedin.com/in/nikola-sachkov" target="_blank" rel="nofollow"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+                <li><a href="https://github.com/nikolasachkov" target="_blank" rel="nofollow"><i class="fab fa-github"></i> GitHub</a></li>
+            </ul>
+            <p>Want to share something with me?</p>
+            <form>
+                <!-- Name -->
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" placeholder="Your name..." name="name" id="name" required>
+                </div>
+                <!-- Email -->
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="Your email..." name="email" id="email" required>
+                </div>
+                <!-- Message -->
+                 <div>
+                    <label for="message">Message:</label>
+                    <textarea rows = "4" placeholder="Your message..." name="message" required></textarea>
+                 </div>
+                 <button type="submit">Send message</button>
+                 <!--Reason for message-->
+                <div>
+                    <label for="reason">Reason for message:</label>
+                    <select name="reason" id="reason">
+                        <option value="">--Please select an option--</option>
+                        <option value="question">Question</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="work">Work</option>
+                    </select>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
