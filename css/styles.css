@@ -55,6 +55,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
     padding: 10px;
     background-color: var(---secondary-color);
 }
@@ -82,7 +86,7 @@ nav li {
 main {
     background-color: var(---background-color);
     padding: 6%;
-    padding-top: 3%;
+    padding-top: 8%;
 }
 
 /* about me section */
@@ -192,6 +196,31 @@ main {
 }
 
 #projects .false-positive img {
-    align-items: center;
+    height: 150px;
     padding-top: 20px;
+}
+
+/* contact section */
+#contact-me h1 {
+    padding-bottom: 20px;
+}
+
+#contact-me ul li{
+    padding-top: 10px;
+}
+
+#contact-me ul li i {
+    padding-right: 10px;
+    color: var(---tertiary-color);
+    
+}
+
+/* footer */
+footer {
+    background-color: var(---secondary-color);
+    padding: 10px;
+    text-align: center;
+}
+footer p {
+    color: var(---tertiary-color);
 }
