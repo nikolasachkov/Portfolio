@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,21 +7,21 @@
 }
 
 /* colors */
-:root{
+:root {
     ---background-color: #040917;
     ---primary-color: #006495;
     ---secondary-color: #403a60;
     ---tertiary-color: #81e2e1;
-    ---hover-color: #7BBFBF;
+    ---hover-color: #7bbfbf;
 }
 
 /* smooth scroll */
-html{
+html {
     scroll-behavior: smooth;
 }
 
 /* global styles */
-ul{
+ul {
     list-style: none;
 }
 
@@ -42,10 +42,12 @@ h1 {
 h3 {
     font-weight: 500;
     color: var(---tertiary-color);
+    padding-bottom: 10px;
 }
 
 p {
     font-size: 18px;
+    padding-bottom: 10px;
 }
 
 /* header */
@@ -123,16 +125,73 @@ main {
 #projects article {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
+    border-bottom: solid;
+    border-width: 1px;
+    padding-bottom: 20px;
 }
 
 #projects article img {
     height: 250px;
-    padding-left: 40px;
     /* TODO - soften borders */
     /* TODO - fix space above project */
     /* TODO  */
 }
 
 #projects article div p {
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    padding-right: 10%;
+}
+
+#projects .project1 img {
+    height: 300px;
+}
+
+#projects .project1 div .what-is-HT {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: var(---tertiary-color);
+}
+
+#projects .project1 div .what-is-TF {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: var(---tertiary-color);
+}
+
+#projects .project1 div .my-role {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: var(---tertiary-color);
+}
+
+#projects .project2 img {
+    height: 300px;
+}
+
+#projects .project4 {
+    display: block;
+}
+
+#projects .project4 p {
+    padding-right: 60%;
+}
+
+#projects .project4 img {
+    height: 100px;
+    padding-top: 20px;
+}
+
+#projects .false-positive {
+    display: block;
+    padding-right: 30%;
+}
+
+#projects .false-positive p {
+    font-size: 22px;
+}
+
+#projects .false-positive img {
+    align-items: center;
+    padding-top: 20px;
 }
